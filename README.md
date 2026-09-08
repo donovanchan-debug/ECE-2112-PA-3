@@ -13,4 +13,7 @@ Requirement: The row selection in part (b) must use iloc; the column selection i
 use column labels.  
 
 **How it works:**
-
+1. Display the cars spreadsheet
+`cars = pd.read_csv('cars.csv')`
+`cars`
+   
