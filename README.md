@@ -31,3 +31,22 @@ the first data row is row 1.
 `selected_columns = cars_6_to_10[['Model', 'mpg', 'cyl', 'hp', 'gear']]`   
 `selected_columns`   
    
+# B. Model Lookup
+Use Boolean indexing on the Model column to answer both requests:   
+a. Display the complete row for Toyota Corolla.   
+b. For Pontiac Firebird, display only Model, mpg, hp, and wt.   
+Store the two results in toyota and pontiac, respectively. Do not use a hard-coded row number to
+locate either model.   
+
+**How it works:**   
+1. Display the cars spreadsheet:   
+`cars = pd.read_csv('cars.csv')`      
+`cars`   
+
+2. Display the complete row for Toyota Corolla:   
+`toyota = cars[cars['Model'] == 'Toyota Corolla']`  
+`toyota`   
+
+3. For Pontiac Firebird, display only Model, mpg, hp, and wt:   
+`pontiac = cars[cars["Model"] == "Pontiac Firebird"][["Model", "mpg", "hp", "wt"]]`   
+`pontiac`   
